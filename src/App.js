@@ -14,6 +14,9 @@ import { Route } from 'react-router-dom';
 import queryString from 'query-string';
 import MySavedModal from './components/MySavedModal';
 
+const cors = require('cors');
+app.use(cors());
+
 const languages = {
   en: "English",
   sv: "Svenska",
